@@ -1,0 +1,86 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: SofiaPro;
+    background-color:rgb(114, 114, 114);
+    color:rgb(255, 255, 255);
+    user-select: none;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: SofiaPro;
+    src: url(fonts/Sofia\ Pro\ Medium.otf);
+    font-weight: Medium;
+}
+
+#stuff {
+    position: absolute;
+    text-align: center;
+    margin:auto;
+    top:20%;
+    left:50%;
+    width: 90%;
+    transform: translate(-50%, 72px);
+}
+
+h1 {
+    font-size:100px;
+}
+
+h2 {
+    display:inline-block;
+    padding:10px;
+}
+
+.links {
+    color: rgba(255, 255, 255, 0.678);
+    text-decoration: none; /* no underline */
+}
+
+.links:hover {
+    color:rgba(255, 255, 255, 0.863)
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #18191Cff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #18191Cff transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
