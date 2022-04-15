@@ -1,3 +1,9 @@
+@font-face {
+  font-family: SofiaPro;
+  src: url(fonts/Sofia\ Pro\ Medium.otf);
+  font-weight: Medium;
+}
+
 @media screen {
   html, body {
     min-height: 100%;
@@ -6,7 +12,7 @@
   body {
     margin: 0;
     font-size: 16px;
-    font-family: serif;
+    font-family: "SofiaPro";
     line-height: 1.4;
   }
 
@@ -15,9 +21,9 @@
     height: 100vh;
     position: relative;
     z-index: 10;
-    font-family: "Anton", Verdana, sans-serif;
+    font-family: "SofiaPro";
     overflow: hidden;
-    background-color: #011034;
+    background-color: #6000AEff;
   }
   
   #page-404 #title {
@@ -47,10 +53,10 @@
     right: 0;
     bottom: 0;
     left: 0;
-    text-transform: uppercase;
+    text-transform: lowercase;
     pointer-events: none;
     margin: 0;
-    font-weight: normal;
+    font-weight: Medium;
     color: #FFF;
   }
   
@@ -61,7 +67,7 @@
     left: 0;
     z-index: 15;
     text-align: center;
-    
+
     opacity: 0;
     transition: opacity 1.25s 2s ease-in-out;
   }
@@ -75,8 +81,8 @@
     padding: 0.35em 0.75em;
     border: 1px solid #FFF;
     text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: lowercase;
+    font-family: "SofiaPro";
     color: #FFF;
     
     transition: color 0.4s ease-in-out, background 0.4s ease-in-out, border-color 0.4s ease-in-out;

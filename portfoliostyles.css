@@ -16,12 +16,6 @@
     font-weight: Bold;
 }
 
-@font-face {
-    font-family: SofiaPro;
-    src: url(fonts/s);
-    font-weight: Bold;
-}
-
 html, body {
     background-color:#ccc!important;
     font-family: SofiaPro!important;
