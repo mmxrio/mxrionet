@@ -84,3 +84,9 @@ h2 {
     visibility: visible;
     opacity: 1;
 }
+
+@media screen and (max-width: 800px) {
+    #mxriotitle {
+        font-size: 70px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
